@@ -10,7 +10,7 @@
 <body>
   <div class="top-background">
   </div>
-  <div>
+  <div class="content">
     <div class="main">
       <div class="phone">
         <div>
@@ -32,15 +32,21 @@
             <div class="message sender">Here are a few pictures. She’s a happy girl!</div>
             <div class="message sender">Can you make it?</div>   
             <div class="message reciever">She looks so happy! The time we discussed works. How long shall I take her out for?</div>      
-            <div class="message reciever price">30 minute walk <span>$29</span></div>      
-            <div class="message reciever price">1 hour walk <span>$49</span></div>
-            <form action="http://www.example.com/login.php">
+            <form>
+              <div class="message reciever poll">
+                <span class="time"><input type="radio" name="price" value="$29" /><span class="checkmark"></span>30 minute walk</span><span class="price">$29</span>
+              </div>
+              <div class="message reciever poll">
+                <span class="time"><input type="radio" name="price" value="$49" /><span class="checkmark"></span>1 hour walk</span><span class="price">$49</span>
+              </div>
+            </form>
+            <form>
               <input class="type-a-message" type="text" placeholder="Type a message…" />
             </form>
           </div>
         </div>
       </div>
-      <div class="main-heading">
+      <div>
         <h1>Simple booking</h1>
         <p>Stay in touch with our dog walkers through the chat interface. This makes it easy to 
         discuss arrangements and make bookings. Once the walk has been completed you can rate 
