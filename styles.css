@@ -1,0 +1,161 @@
+@font-face {
+  font-family: "Rubik";
+  src: url('fonts/Rubik.ttf');
+}
+.attribution {
+    font-size: 13px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+    text-decoration: none;
+}
+body {
+  font-family: "Rubik";
+  margin: 0px;
+  font-size: 16px;
+}
+.top-background {
+  background-image: linear-gradient(hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+  position: absolute;
+  height: 50vh;
+  width : 50%;
+  border-radius: 0px 0px 1000px 0px;
+  z-index: -1;
+}
+.bottom-background {
+  width: 50%;
+  height: 50vh;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: hsl(289, 100%, 72%);
+  border-radius: 1000px 0px 0px 0px;
+  opacity: 0.5;
+  z-index: -1;
+  opacity: 0.25;
+}
+.main {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.phone {
+  background-color: hsl(0, 0%, 100%);
+  width: 250px;
+  padding: 10px;
+  border-radius: 30px;
+  margin: 0px auto;
+  box-shadow: 0px 5px 10px grey;
+}
+.phone>div {
+  width: in-herit;
+  height: in-herit;
+  box-sizing: border-box;
+  background-color: hsl(270, 20%, 96%);
+  padding: 0px 0px 10px;
+  border-radius: 20px;
+  margin: 0px auto;
+}
+.phone+div {
+  text-align: center;
+}
+.chat-header {
+  background-image: linear-gradient(hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: space-between;
+  box-sizing: border-box;
+  padding: 0px 10px 10px;
+  border-radius: 20px 20px 5px 5px;
+}
+.camera {
+  width: 60%;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 0px 0px 15px 15px;
+  height: 20px;
+}
+.profile-picture {
+  border-radius: 20px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: hsl(0, 0%, 100%);
+  margin-right: 10px;
+}
+.profile {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  color: hsl(0, 0%, 100%);
+  font-size: 13px;
+  height: 45px;
+}
+.profile span{
+  color: hsl(276, 100%, 81%);
+  font-size: 10px;
+}
+.name {
+  display: flex;
+  flex-direction: column;
+}
+.message {
+  box-sizing: border-box;
+  padding: 10px;
+  margin: 5px 10px;
+  font-size: 8px;
+}
+.sender {
+  max-width: fit-content;
+  width: 130px;
+  float: right;
+  clear: right;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 10px 10px 5px 10px;
+  color: hsl(271, 15%, 43%);
+}
+.sender>img {
+  border-radius: 10px;
+  margin: 0px 0px 0px 10px;
+}
+.reciever {
+  width: 130px;
+  clear: right;
+  background-color: hsla(276, 100%, 81%, 25%);
+  border-radius: 10px 10px 10px 5px;
+  color: hsl(276, 55%, 52%);
+}
+.chat-images {
+  width: fit-content;
+  background: transparent;
+  padding: 0px;
+  width: fill;
+  box-sizing: border-box;
+  margin: 10px 10px 0px 0px;
+}
+.price {
+  color: hsl(0, 0%, 100%);
+  background-image: linear-gradient(hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+}
+.type-a-message {
+  background-color: hsl(0, 0%, 100%);
+  padding: 5px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  margin: 10px 10px 0px;
+  color: hsl(270, 7%, 64%);
+  border-color: hsl(0, 0%, 100%);
+  border-style: solid;
+  width: 230px;
+}
+.main-heading>h1 {
+  color: hsl(271, 36%, 24%);
+  font-size: 40px;
+  margin-top: 70px;
+}
+.main-heading>p {
+  color: hsl(270, 7%, 64%);
+}
