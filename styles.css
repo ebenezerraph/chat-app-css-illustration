@@ -243,13 +243,14 @@ body {
     width: 450px;
   }
   .top-background {
-    width: 30%;
+    left: -10%;
+    width: 40%;
     height: 80vh;
     border-radius: 0px 0px 1000px 1000px;
   }
   .bottom-background {
     width: 30%;
     height: 80vh;
-    border-radius: 1000px 1000px 0px 0px;
+    border-radius: 1000px 0px 0px 0px;
   }
 }
