@@ -22,11 +22,11 @@ Users should be able to:
 
 ### Screenshot
 
-![](images/nft-preview-card-component.jpg)
+![](images/chat-app-css-illustration.jpg)
 
 ### Links
 
-- Solution URL: [GitHub](https://github.com/ebenezerraph/chat-app-css-illustration-component)
+- Solution URL: [GitHub](https://github.com/ebenezerraph/chat-app-css-illustration)
 - Live Site URL: [Chat app CSS illustration](https://ebenezerraph.github.io/chat-app-css-illustration/)
 
 ## My process
