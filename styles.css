@@ -43,7 +43,7 @@ body {
 .main {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
 }
 .phone {
   background-color: hsl(0, 0%, 100%);
@@ -56,14 +56,11 @@ body {
 .phone>div {
   width: in-herit;
   height: in-herit;
-  box-sizing: border-box;
+  box-sizing: bordevr-box;
   background-color: hsl(270, 20%, 96%);
   padding: 0px 0px 10px;
   border-radius: 20px;
   margin: 0px auto;
-}
-.phone+div {
-  text-align: center;
 }
 .chat-header {
   background-image: linear-gradient(to left, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
@@ -191,29 +188,57 @@ body {
   color: hsl(270, 7%, 64%);
   opacity: 0.5;
 }
+.phone+div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  max-width: fit-content;
+}
 .phone+div>h1 {
   color: hsl(271, 36%, 24%);
   font-size: 40px;
-  margin-top: 70px;
+  width: fit-content;
 }
 .phone+div>p {
   color: hsl(270, 7%, 64%);
-  width: 95%;
-  margin: 10px auto;
+  width: 310px;
 }
 @media only screen and (min-width: 700px) {
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin: 0px auto;
+    width: fit-content;
+  }
   .main {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
   }
-  .content {
-    margin: 0px auto;
-    width: 100%;
-    width: 100%;
+  .phone+div {
+    width: fit-content;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    justify-items: flex-start;
+    text-align: left;
+    margin-left: 80px;
+  }
+  .phone+div>p {
+    width: 450px;
+  }
+  .top-background {
+    width: 30%;
+    height: 80vh;
+    border-radius: 0px 0px 1000px 1000px;
+  }
+  .bottom-background {
+    width: 30%;
+    height: 80vh;
+    border-radius: 1000px 1000px 0px 0px;
   }
 }
