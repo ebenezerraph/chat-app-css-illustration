@@ -223,6 +223,7 @@ body {
     align-content: center;
     margin: 0px auto;
     width: fit-content;
+    padding: 100px 0px;
   }
   .main {
     display: flex;
