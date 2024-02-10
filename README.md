@@ -27,7 +27,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [GitHub](https://github.com/ebenezerraph/chat-app-css-illustration-component)
-- Live Site URL: [Chat app CSS illustration](https://ebenezerraph.github.io/chat-app-css-illustration-component/)
+- Live Site URL: [Chat app CSS illustration](https://ebenezerraph.github.io/chat-app-css-illustration/)
 
 ## My process
 
