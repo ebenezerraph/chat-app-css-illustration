@@ -19,6 +19,7 @@ This is a solution to the [Chat app CSS illustration challenge on Frontend Mento
 Users should be able to:
 
 - View the optimal layout depending on their device's screen size
+- **Bonus**: See the chat interface animate on the initial load
 
 ### Screenshot
 
