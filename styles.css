@@ -2,24 +2,28 @@
   font-family: "Rubik";
   src: url('fonts/Rubik.ttf');
 }
+
 .attribution {
   font-size: 13px;
   text-align: center;
   margin: 10px auto;
   width: 80%;
 }
+
 .attribution a {
   color: hsl(228, 45%, 44%);
   text-decoration: none;
 }
+
 body {
   font-family: "Rubik";
-  margin: 0px;
+  margin: 0;
   font-size: 16px;
-  animation: fadeInAnimation ease 3s;
+  animation: fadeInAnimation ease 2s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
+
 @keyframes fadeInAnimation {
   0% {
     opacity: 0;
@@ -28,17 +32,20 @@ body {
     opacity: 1;
   }
 }
+
 .content {
-  padding: 30px 0px;
+  padding: 30px 0;
 }
+
 .top-background {
   background-image: linear-gradient(hsl(293, 100%, 63%), hsl(264, 100%, 61%));
   position: fixed;
   height: 50vh;
-  width : 50%;
-  border-radius: 0px 0px 1000px 0px;
+  width: 50%;
+  border-radius: 0 0 1000px 0;
   z-index: -1;
 }
+
 .bottom-background {
   width: 50%;
   height: 50vh;
@@ -46,45 +53,47 @@ body {
   bottom: 0;
   right: 0;
   background-color: hsl(289, 100%, 72%);
-  border-radius: 1000px 0px 0px 0px;
+  border-radius: 1000px 0 0 0;
   opacity: 0.1;
   z-index: -1;
 }
+
 .main {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .phone {
   background-color: hsl(0, 0%, 100%);
   width: 250px;
   padding: 10px;
   border-radius: 30px;
-  margin: 0px auto;
-  box-shadow: 0px 5px 10px grey;
+  margin: 0 auto;
+  box-shadow: 0 5px 10px grey;
 }
-.phone>div {
-  width: in-herit;
-  height: in-herit;
-  box-sizing: bordevr-box;
+
+.phone > div {
+  width: inherit;
+  height: inherit;
+  box-sizing: border-box;
   background-color: hsl(270, 20%, 96%);
-  padding: 0px 0px 10px;
+  padding: 0 0 10px;
   border-radius: 20px;
-  margin: 0px auto;
+  margin: 0 auto;
 }
+
 .chat-header {
   background-image: linear-gradient(to left, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
   display: flex;
   flex-direction: column;
-  /*justify-content: center;*/
-  /*justify-items: center;*/
   align-items: center;
-  /*align-content: space-between;*/
   box-sizing: border-box;
-  padding: 0px 10px 10px;
+  padding: 0 10px 10px;
   border-radius: 20px 20px 5px 5px;
   margin-bottom: 10px;
 }
+
 .profile {
   display: flex;
   justify-content: space-between;
@@ -92,20 +101,21 @@ body {
   align-items: center;
   width: 225px;
 }
+
 .camera {
   width: 60%;
   background-color: hsl(0, 0%, 100%);
-  border-radius: 0px 0px 15px 15px;
+  border-radius: 0 0 15px 15px;
   height: 20px;
 }
+
 .profile-picture {
   border-radius: 20px;
-  border-style: solid;
-  border-width: 1px;
-  border-color: hsl(0, 0%, 100%);
+  border: 1px solid hsl(0, 0%, 100%);
   margin-right: 10px;
 }
-.profile>div {
+
+.profile > div {
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -114,29 +124,35 @@ body {
   font-size: 13px;
   height: 45px;
 }
-.profile>div span{
+
+.profile > div span {
   color: hsl(276, 100%, 81%);
   font-size: 10px;
 }
+
 .name {
   display: flex;
   flex-direction: column;
 }
+
 .fa-chevron-left {
   font-size: 10px;
   color: hsl(0, 0%, 100%);
   margin-right: 5px;
 }
+
 .fa-ellipsis-v {
   color: hsl(0, 0%, 100%);
   font-size: 13px;
 }
+
 .message {
   box-sizing: border-box;
   padding: 10px;
-  margin: 0px 10px 10px;
+  margin: 0 10px 10px;
   font-size: 8px;
 }
+
 .sender {
   max-width: fit-content;
   width: 130px;
@@ -146,10 +162,12 @@ body {
   border-radius: 10px 10px 5px 10px;
   color: hsl(271, 15%, 43%);
 }
-.sender>img {
+
+.sender > img {
   border-radius: 10px;
-  margin: 0px 0px 0px 10px;
+  margin: 0 0 0 10px;
 }
+
 .reciever {
   width: 130px;
   clear: right;
@@ -157,30 +175,35 @@ body {
   border-radius: 10px 10px 10px 5px;
   color: hsl(276, 55%, 52%);
 }
+
 .chat-images {
   width: fit-content;
   background: transparent;
-  padding: 0px;
+  padding: 0;
   width: fill;
   box-sizing: border-box;
-  margin: 10px 10px 10px 0px;
+  margin: 10px 10px 10px 0;
 }
+
 .poll {
   display: flex;
-  justify-content: space-between; 
+  justify-content: space-between;
   color: hsl(276, 100%, 81%);
   background-image: linear-gradient(to left, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
   width: 160px;
   align-items: center;
 }
+
 .time {
   display: flex;
   align-items: center;
   align-content: center;
 }
+
 .time input {
   display: none;
 }
+
 .checkmark {
   position: relative;
   top: 0;
@@ -194,27 +217,30 @@ body {
   border-width: 1px;
   border-radius: 50%;
 }
+
 .price {
   color: hsl(0, 0%, 100%);
   font-weight: bold;
   font-size: 10px;
 }
+
 .type-a-message {
   background-color: hsl(0, 0%, 100%);
   padding: 10px;
   box-sizing: border-box;
   border-radius: 20px;
-  margin: 10px 10px 0px;
-  border-color: hsl(0, 0%, 100%);
-  border-style: solid;
+  margin: 10px 10px 0;
+  border: 1px solid hsl(0, 0%, 100%);
   width: 230px;
   font-size: 10px;
 }
+
 ::placeholder {
   color: hsl(270, 7%, 64%);
   opacity: 0.5;
 }
-.phone+div {
+
+.phone + div {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -222,31 +248,36 @@ body {
   text-align: center;
   max-width: fit-content;
 }
-.phone+div>h1 {
+
+.phone + div > h1 {
   color: hsl(271, 36%, 24%);
   font-size: 40px;
   width: fit-content;
 }
-.phone+div>p {
+
+.phone + div > p {
   color: hsl(270, 7%, 64%);
   width: 310px;
 }
+
 @media only screen and (min-width: 700px) {
   .content {
     display: flex;
     flex-direction: column;
     align-content: center;
-    margin: 0px auto;
+    margin: 0 auto;
     width: fit-content;
-    padding: 100px 0px;
+    padding: 50px 0px;
   }
+
   .main {
     display: flex;
     flex-direction: row;
     align-items: center;
     margin-bottom: 50px;
   }
-  .phone+div {
+
+  .phone + div {
     width: fit-content;
     display: flex;
     flex-direction: column;
@@ -255,19 +286,22 @@ body {
     text-align: left;
     margin-left: 80px;
   }
-  .phone+div>p {
-    width: 450px;
+
+  .phone + div > p {
     line-height: 1.5em;
+    width: 450px;
   }
+
   .top-background {
     left: -10%;
     width: 40%;
     height: 80vh;
-    border-radius: 0px 0px 1000px 1000px;
+    border-radius: 0 0 1000px 1000px;
   }
+
   .bottom-background {
     width: 30%;
     height: 80vh;
-    border-radius: 1000px 0px 0px 0px;
+    border-radius: 500px 0 0 0;
   }
 }
