@@ -16,12 +16,24 @@
 }
 
 body {
-  font-family: "Rubik";
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   margin: 0;
-  font-size: 16px;
+  font-family: "Rubik";
   animation: fadeInAnimation ease 2s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 @keyframes fadeInAnimation {
@@ -33,13 +45,11 @@ body {
   }
 }
 
-.content {
-  padding: 30px 0;
-}
-
 .top-background {
   background-image: linear-gradient(hsl(293, 100%, 63%), hsl(264, 100%, 61%));
   position: fixed;
+  top: 0;
+  left: 0;
   height: 50vh;
   width: 50%;
   border-radius: 0 0 1000px 0;
@@ -225,8 +235,11 @@ body {
 }
 
 .type-a-message {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   background-color: hsl(0, 0%, 100%);
-  padding: 10px;
+  padding: 5px;
   box-sizing: border-box;
   border-radius: 20px;
   margin: 10px 10px 0;
@@ -235,9 +248,28 @@ body {
   font-size: 10px;
 }
 
+.type-a-message > input {
+  border: none;
+  padding: 0;
+  margin: 0 0 0 15px;
+}
+
+.type-a-message > button {
+  border: none;
+  background: none;
+  padding: 0;
+  width: auto;
+}
+
 ::placeholder {
   color: hsl(270, 7%, 64%);
   opacity: 0.5;
+}
+
+.fa-chevron-circle-right {
+  font-size: 20px;
+  margin: 0;
+  color: hsl(271, 36%, 24%);
 }
 
 .phone + div {
@@ -260,14 +292,11 @@ body {
   width: 310px;
 }
 
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 800px) {
   .content {
-    display: flex;
     flex-direction: column;
-    align-content: center;
-    margin: 0 auto;
-    width: fit-content;
-    padding: 50px 0px;
+    justify-content: space-around;
+    align-items: center;
   }
 
   .main {
