@@ -18,10 +18,12 @@
 body {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   min-height: 100vh;
   margin: 0;
   font-family: "Rubik";
-  animation: fadeInAnimation ease 2s;
+  animation: fade-in ease 2s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
@@ -32,11 +34,10 @@ body {
   align-items: center;
   justify-content: center;
   flex-grow: 1;
-  padding: 20px;
   box-sizing: border-box;
 }
 
-@keyframes fadeInAnimation {
+@keyframes fade-in {
   0% {
     opacity: 0;
   }
@@ -293,17 +294,11 @@ body {
 }
 
 @media only screen and (min-width: 800px) {
-  .content {
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-  }
-
   .main {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
   }
 
   .phone + div {
