@@ -81,7 +81,7 @@ body {
   padding: 10px;
   border-radius: 30px;
   margin: 0 auto;
-  box-shadow: 0 5px 10px grey;
+  box-shadow: 0 5px 50px rgb(173, 173, 173);
 }
 
 .phone > div {
@@ -232,7 +232,7 @@ body {
 .price {
   color: hsl(0, 0%, 100%);
   font-weight: bold;
-  font-size: 10px;
+  font-size: 14px;
 }
 
 .type-a-message {
@@ -268,7 +268,7 @@ body {
 }
 
 .fa-chevron-circle-right {
-  font-size: 20px;
+  font-size: 24px;
   margin: 0;
   color: hsl(271, 36%, 24%);
 }
@@ -290,6 +290,7 @@ body {
 
 .phone + div > p {
   color: hsl(270, 7%, 64%);
+  line-height: 1.5em;
   width: 310px;
 }
 
@@ -319,13 +320,14 @@ body {
   .top-background {
     left: -10%;
     width: 40%;
-    height: 80vh;
+    height: 85vh;
     border-radius: 0 0 1000px 1000px;
   }
 
   .bottom-background {
-    width: 30%;
-    height: 80vh;
-    border-radius: 500px 0 0 0;
+    width: 35%;
+    height: 85vh;
+    border-radius: 500px 500px 0 0;
+    right: -10%;
   }
 }
