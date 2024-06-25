@@ -23,6 +23,10 @@ body {
   animation-fill-mode: forwards;
 }
 
+i {
+  cursor: pointer;
+}
+
 /* Background Elements */
 .top-background {
   position: fixed;
