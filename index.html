@@ -41,12 +41,13 @@
             <div class="message reciever">She looks so happy! The time we discussed works. How long shall I take her out
               for?</div>
             <form>
-              <div class="message reciever poll one">
-                <span class="time"><input type="radio" name="price" value="$29" /><span class="checkmark"></span>30
+              <div class="message reciever poll">
+                <span class="time"><input type="radio" name="price" value="$29" /><span class="checkmark one"></span>30
                   minute walk</span><span class="price">$29</span>
               </div>
-              <div class="message reciever poll two">
-                <span class="time"><input type="radio" name="price" value="$49" /><span class="checkmark"></span>1 hour
+              <div class="message reciever poll">
+                <span class="time"><input type="radio" name="price" value="$49" /><span class="checkmark two"></span>1
+                  hour
                   walk</span><span class="price">$49</span>
               </div>
             </form>
@@ -76,26 +77,29 @@
   </div>
   <script>
     const checkmarks = document.querySelectorAll('.checkmark');
-    checkmarks.forEach(checkmark => {
-      checkmark.addEventListener('click', function () {
+    const activeClass = 'checkmark-active';
+    const activeStyles = { borderWidth: '4px', borderColor: 'hsl(264, 100%, 61%)', height: '3px', width: '3px' };
+
+    const setCheckmarkStyles = (checkmark, isActive) =>
+      Object.entries(activeStyles).forEach(([prop, val]) => checkmark.style[prop] = isActive ? val : '');
+
+    checkmarks.forEach(checkmark =>
+      checkmark.addEventListener('click', e => {
         checkmarks.forEach(c => {
-          c.style.borderColor = '';
-          c.style.borderWidth = '';
-          c.style.height = '';
-          c.style.width = '';
+          const isActive = c === e.target;
+          c.classList.toggle(activeClass, isActive);
+          setCheckmarkStyles(c, isActive);
         });
+        const radio = e.target.previousElementSibling;
+        if (radio && radio.type === 'radio') radio.checked = true;
+      })
+    );
 
-        this.style.borderWidth = '4px';
-        this.style.borderColor = 'hsl(264, 100%, 61%)';
-        this.style.height = '3px';
-        this.style.width = '3px';
-
-        const radioButton = this.previousElementSibling;
-        if (radioButton && radioButton.type === 'radio') {
-          radioButton.checked = true;
-        }
-      });
-    });
+    const initialActive = document.querySelector('.one');
+    if (initialActive) {
+      initialActive.classList.add(activeClass);
+      setCheckmarkStyles(initialActive, true);
+    }
   </script>
 </body>
 
