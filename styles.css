@@ -258,13 +258,6 @@ i {
   border: none;
 }
 
-.type-a-message>button {
-  width: auto;
-  padding: 0;
-  background: none;
-  border: none;
-}
-
 ::placeholder {
   color: hsl(270, 7%, 64%);
   opacity: 0.5;

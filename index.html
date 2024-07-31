@@ -78,7 +78,7 @@
   <script>
     const checkmarks = document.querySelectorAll('.checkmark');
     const activeClass = 'checkmark-active';
-    const activeStyles = { borderWidth: '4px', borderColor: 'hsl(264, 100%, 61%)', height: '3px', width: '3px' };
+    const activeStyles = { borderWidth: '4px', borderColor: 'hsl(264, 100%, 61%)', height: '4px', width: '4px' };
 
     const setCheckmarkStyles = (checkmark, isActive) =>
       Object.entries(activeStyles).forEach(([prop, val]) => checkmark.style[prop] = isActive ? val : '');
