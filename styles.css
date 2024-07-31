@@ -224,6 +224,7 @@ i {
   background-color: hsla(0, 0%, 0%, 0%);
   border: 1px solid hsl(276, 100%, 81%);
   border-radius: 50%;
+  cursor: pointer;
 }
 
 .price {
@@ -245,6 +246,10 @@ i {
   border-radius: 20px;
   box-sizing: border-box;
   font-size: 10px;
+}
+
+.type-a-message>input:focus-visible {
+  outline: unset;
 }
 
 .type-a-message>input {

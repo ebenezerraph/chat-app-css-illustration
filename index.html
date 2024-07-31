@@ -7,7 +7,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Frontend Mentor | Chat App CSS Illustration</title>
   <link rel="stylesheet" type="text/css" href="styles.css">
-  <script src="https://kit.fontawesome.com/3a05c41217.js" crossorigin="anonymous" async ></script>
+  <script src="https://kit.fontawesome.com/3a05c41217.js" crossorigin="anonymous" async></script>
 </head>
 
 <body>
@@ -41,11 +41,11 @@
             <div class="message reciever">She looks so happy! The time we discussed works. How long shall I take her out
               for?</div>
             <form>
-              <div class="message reciever poll">
+              <div class="message reciever poll one">
                 <span class="time"><input type="radio" name="price" value="$29" /><span class="checkmark"></span>30
                   minute walk</span><span class="price">$29</span>
               </div>
-              <div class="message reciever poll">
+              <div class="message reciever poll two">
                 <span class="time"><input type="radio" name="price" value="$49" /><span class="checkmark"></span>1 hour
                   walk</span><span class="price">$49</span>
               </div>
@@ -74,6 +74,29 @@
   </div>
   <div class="bottom-background">
   </div>
+  <script>
+    const checkmarks = document.querySelectorAll('.checkmark');
+    checkmarks.forEach(checkmark => {
+      checkmark.addEventListener('click', function () {
+        checkmarks.forEach(c => {
+          c.style.borderColor = '';
+          c.style.borderWidth = '';
+          c.style.height = '';
+          c.style.width = '';
+        });
+
+        this.style.borderWidth = '4px';
+        this.style.borderColor = 'hsl(264, 100%, 61%)';
+        this.style.height = '3px';
+        this.style.width = '3px';
+
+        const radioButton = this.previousElementSibling;
+        if (radioButton && radioButton.type === 'radio') {
+          radioButton.checked = true;
+        }
+      });
+    });
+  </script>
 </body>
 
 </html>
