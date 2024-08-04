@@ -256,6 +256,8 @@ i {
   margin: 0 0 0 15px;
   padding: 0;
   border: none;
+  width: 170px;
+  height: 24px;
 }
 
 ::placeholder {
